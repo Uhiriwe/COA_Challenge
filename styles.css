@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+}
+
+.gallery {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    padding-left: 6%;
+}
+
+img {
+    transition: transform 0.5s ease;
+
+}
+
+img:hover {
+    opacity: 0.3;
+    filter: grayscale(100%) blur(3px);
+    transform: scale(1.1);
+
+}
+
+.text span:hover {
+    pointer-events: none;
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 5%;
+    pointer-events: none;
+    font-family: "DIN Condensed", sans-serif;
+    transition: transform 0.3s ease;
+
+}
+
+.photos:hover .text {
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.hidden-element1 {
+    position: absolute;
+    top: 65%;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    display: none;
+}
+
+.photos:hover .hidden-element1 {
+    display: block;
+}
+
+a {
+    color: #5cdbfa;
+    text-decoration: none;
+    margin-left: 50px;
+}
